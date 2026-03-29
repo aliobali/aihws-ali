@@ -1,0 +1,50 @@
+{
+  "data_shape": [
+    53985,
+    20
+  ],
+  "n_features": 17,
+  "feature_names": [
+    "1_road_dist",
+    "LULC_2019",
+    "NDVI_mean_aug",
+    "NDVI_mean_march",
+    "aspect",
+    "max_temp_aug",
+    "mean_precipitation",
+    "mean_temp",
+    "slope",
+    "soil_silt",
+    "slope_log1p",
+    "soil_silt_log1p",
+    "aspect_sin",
+    "aspect_cos",
+    "slope_x_precip",
+    "temp_x_precip",
+    "NDVI_diff_seasonal"
+  ],
+  "split_sizes": {
+    "train": 32391,
+    "val": 10797,
+    "test": 10797
+  },
+  "stage1_metrics": {
+    "pr_auc": 0.898241650227342,
+    "accuracy": 0.88589422987867,
+    "precision": 0.8175979447655748,
+    "recall": 0.7931464174454829,
+    "f1": 0.8051865907653384,
+    "roc_auc": 0.9427957602506665
+  },
+  "stage2_metrics": {
+    "r2": 0.23521754231845504,
+    "rmse": 0.02427099131142254,
+    "mae": 0.016232178687927746,
+    "mse": 0.0005890810192391484
+  },
+  "class_balance": {
+    "train_positive_pct": 29.736655243740547,
+    "val_positive_pct": 29.730480689080302,
+    "test_positive_pct": 29.739742521070667
+  }
+}

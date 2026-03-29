@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+# *.ipynb  # Allow notebooks to be committed
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data/Models
+*.pkl
+*.tif
+*.csv
+*.pickle
+
+# Outputs
+outputs/*.npy
+outputs/*.tif
+outputs/*.aux.xml
+outputs/*.txt

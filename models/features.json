@@ -1,0 +1,19 @@
+[
+  "1_road_dist",
+  "LULC_2019",
+  "NDVI_mean_aug",
+  "NDVI_mean_march",
+  "aspect",
+  "max_temp_aug",
+  "mean_precipitation",
+  "mean_temp",
+  "slope",
+  "soil_silt",
+  "slope_log1p",
+  "soil_silt_log1p",
+  "aspect_sin",
+  "aspect_cos",
+  "slope_x_precip",
+  "temp_x_precip",
+  "NDVI_diff_seasonal"
+]
