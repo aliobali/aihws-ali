@@ -2,8 +2,6 @@
 
 A machine learning system for predicting wildfire occurrence and burn magnitude from geospatial raster data using scikit-learn RandomForest models. This project combines environmental feature engineering with advanced preprocessing to achieve production-ready predictions.
 
-**Status:** Complete and ready for deployment
-
 ---
 
 ## Project Overview
@@ -90,6 +88,27 @@ EXPERIMENT 3: MODEL COMPARISON (RandomForest vs Logistic Regression)
 
 This validates that the production model configuration (median imputation, engineered features, RandomForest) is well-justified.
 
+### 4. Run SHAP Explainability Analysis
+
+Understand how individual features drive model predictions using SHAP (SHapley Additive exPlanations):
+
+```bash
+uv run python src/shap_analysis.py
+```
+
+**What it generates:**
+- **shap_summary_importance.png** — Bar chart showing mean |SHAP| values for all features (global feature importance from SHAP perspective)
+- **shap_dependence_plots.png** — 6 interaction plots showing how specific feature values influence model output
+- **shap_analysis_report.txt** — Detailed text report with top features and interpretation
+
+**Key Outputs:**
+```
+SHAP Summary: Top 15 Features by Mean |SHAP value|
+  1. 1_road_dist — 0.0847 (strongest predictor)
+  2. slope_x_precip — 0.0623 (terrain-moisture interaction)
+  3. mean_temp — 0.0521 (temperature effect)
+  ...
+```
 ---
 
 ## Model Performance
